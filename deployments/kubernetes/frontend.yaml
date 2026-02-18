@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+spec:
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+      - name: server
+        image: frontend:latest
+        ports:
+        - containerPort: 3000
+        env:
+        - name: PORT
+          value: "3000"
+        - name: PRODUCT_SERVICE_ADDR
+          value: "product-service:3550"
+        - name: CART_SERVICE_ADDR
+          value: "cart-service:7070"
+        - name: CURRENCY_SERVICE_ADDR
+          value: "currency-service:7000"
+        readinessProbe:
+          httpGet:
+            path: /_next/health
+            port: 3000
+        livenessProbe:
+          httpGet:
+            path: /_next/health
+            port: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend
+spec:
+  type: LoadBalancer
+  selector:
+    app: frontend
+  ports:
+  - name: http
+    port: 80
+    targetPort: 3000

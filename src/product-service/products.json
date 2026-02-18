@@ -1,0 +1,74 @@
+[
+    {
+        "id": "OLJCESPC7Z",
+        "name": "Vintage Typewriter",
+        "description": "This typewriter looks good in your living room.",
+        "picture": "/static/img/products/typewriter.jpg",
+        "price_usd": {
+            "currency_code": "USD",
+            "units": 67,
+            "nanos": 990000000
+        },
+        "categories": [
+            "vintage"
+        ]
+    },
+    {
+        "id": "66VCHSJNUP",
+        "name": "Vintage Camera",
+        "description": "This camera looks like it's from the 1950s.",
+        "picture": "/static/img/products/camera.jpg",
+        "price_usd": {
+            "currency_code": "USD",
+            "units": 124,
+            "nanos": 900000000
+        },
+        "categories": [
+            "photography",
+            "vintage"
+        ]
+    },
+    {
+        "id": "1YMWWN1N4O",
+        "name": "Home Barista Kit",
+        "description": "Always wanted to brew coffee with Chemex and Hario at home?",
+        "picture": "/static/img/products/barista-kit.jpg",
+        "price_usd": {
+            "currency_code": "USD",
+            "units": 124,
+            "nanos": 0
+        },
+        "categories": [
+            "cookware"
+        ]
+    },
+    {
+        "id": "L9ECAV7KIM",
+        "name": "Terrarium",
+        "description": "This terrarium will look great in your white living room.",
+        "picture": "/static/img/products/terrarium.jpg",
+        "price_usd": {
+            "currency_code": "USD",
+            "units": 36,
+            "nanos": 450000000
+        },
+        "categories": [
+            "gardening"
+        ]
+    },
+    {
+        "id": "2ZYFJ3GM2N",
+        "name": "Film Camera",
+        "description": "This camera looks like it's from the 1950s.",
+        "picture": "/static/img/products/film-camera.jpg",
+        "price_usd": {
+            "currency_code": "USD",
+            "units": 2250,
+            "nanos": 0
+        },
+        "categories": [
+            "photography",
+            "vintage"
+        ]
+    }
+]
